@@ -1,0 +1,9 @@
+{
+  "name": "circle-market-data",
+  "version": "1.0.0",
+  "description": "Daily automated market data fetcher",
+  "main": "update_daily_data.js",
+  "dependencies": {
+    "dukascopy-node": "^1.11.0"
+  }
+}
