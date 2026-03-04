@@ -9,8 +9,9 @@ const fs = require('fs');
 
 // Dynamically calculate Rolling 90-Day Window
 const endDate = new Date();
+endDate.setDate(endDate.getDate()-1);
 const startDate = new Date();
-startDate.setDate(endDate.getDate() - 90); 
+startDate.setDate(endDate.getDate() - 91); 
 
 const STANDARD_START = startDate.toISOString().split('T')[0];
 const STANDARD_END = endDate.toISOString().split('T')[0];
